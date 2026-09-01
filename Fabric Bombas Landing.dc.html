@@ -151,7 +151,7 @@
           </div>
           <div>
             <div style="font-size: 12.5px; color: oklch(0.60 0.01 250); margin-bottom: 3px; letter-spacing: 0.04em;">ÁREA DE ATUAÇÃO</div>
-            <div style="font-size: 16px; color: white; font-weight: 600;">Grande São Paulo e região metropolitana</div>
+            <div style="font-size: 16px; color: white; font-weight: 600;">Votorantim, Sorocaba e Região</div>
           </div>
         </div>
       </div>
@@ -185,6 +185,16 @@ class Component extends DCLogic {
 
   handleSubmit(e) {
     e.preventDefault();
+    const f = this.state.form;
+    const tipoLabels = { condominio: 'Condomínio', industria: 'Indústria', comercial: 'Comercial', outro: 'Outro' };
+    let text = '*Solicitação de Diagnóstico - Fabric Bombas*\n\n';
+    text += '*Nome:* ' + f.nome + '\n';
+    text += '*Empresa/Condomínio:* ' + f.empresa + '\n';
+    text += '*Telefone:* ' + f.telefone + '\n';
+    text += '*E-mail:* ' + f.email + '\n';
+    if (f.tipo) text += '*Tipo de imóvel:* ' + (tipoLabels[f.tipo] || f.tipo) + '\n';
+    if (f.mensagem) text += '*Necessidade:* ' + f.mensagem;
+    window.open('https://wa.me/5515998359369?text=' + encodeURIComponent(text), '_blank');
     this.setState({ submitted: true });
   }
 
@@ -202,7 +212,7 @@ class Component extends DCLogic {
       { q: 'Quais tipos de imóveis vocês atendem?', a: 'Atendemos condomínios residenciais e comerciais, indústrias e obras acompanhadas por engenharia.' },
       { q: 'Vocês emitem laudos técnicos e ART?', a: 'Sim, todo serviço executado pode ser acompanhado de laudo técnico e ART, conforme a necessidade do cliente.' },
       { q: 'Como funciona o contrato de manutenção preventiva?', a: 'Definimos periodicidade de visitas com base no perfil do imóvel, com relatórios técnicos a cada visita.' },
-      { q: 'Qual é a área de atuação de vocês?', a: 'Atendemos a Grande São Paulo e região metropolitana, com deslocamento combinado para outras regiões.' }
+      { q: 'Qual é a área de atuação de vocês?', a: 'Atendemos Votorantim, Sorocaba e região, com deslocamento combinado para outras áreas.' }
     ];
     const faqs = faqData.map((f, i) => ({
       ...f,
