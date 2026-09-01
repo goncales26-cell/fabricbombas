@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: oklch(0.72 0.16 55); text-decoration: none; }
+    a:hover { color: oklch(0.60 0.15 50); }
+    input, select, textarea { font-family: 'Inter', sans-serif; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</helmet>
+
+<div style="background: oklch(0.98 0.004 250); color: oklch(0.20 0.02 250); width: 100%; overflow-x: hidden;">
+
+  <!-- HEADER -->
+  <header style="position: sticky; top: 0; z-index: 50; background: oklch(0.22 0.045 250); display: flex; align-items: center; justify-content: space-between; padding: 16px 48px; flex-wrap: wrap; gap: 16px;">
+    <div style="display: flex; align-items: center; background: white; padding: 0; border-radius: 8px; overflow: hidden;">
+      <img src="assets/fabric-bombas-logo-crop.png" alt="Fabric Bombas" style="height: 96px; width: auto; display: block;" />
+    </div>
+    <nav style="display: flex; align-items: center; gap: 28px; flex-wrap: wrap;">
+      <a href="#processo" style="color: oklch(0.85 0.01 250); font-size: 15px; font-weight: 500;" style-hover="color: white;">Como funciona</a>
+      <a href="#faq" style="color: oklch(0.85 0.01 250); font-size: 15px; font-weight: 500;" style-hover="color: white;">Perguntas frequentes</a>
+      <a href="#contato" style="background: oklch(0.72 0.16 55); color: oklch(0.18 0.04 250); font-weight: 700; font-size: 14px; padding: 10px 20px; border-radius: 6px;" style-hover="background: oklch(0.78 0.16 55); color: oklch(0.18 0.04 250);">Solicitar diagnóstico</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section style="max-width: 1240px; margin: 0 auto; padding: 88px 48px 96px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: center;">
+    <div>
+      <div style="display: inline-flex; align-items: center; gap: 8px; background: oklch(0.94 0.02 55); color: oklch(0.45 0.13 55); font-size: 13px; font-weight: 700; letter-spacing: 0.06em; padding: 7px 14px; border-radius: 999px; margin-bottom: 22px;">
+        MANUTENÇÃO HIDRÁULICA PREDIAL &amp; INDUSTRIAL
+      </div>
+      <h1 style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 46px; line-height: 1.12; margin: 0 0 22px; color: oklch(0.20 0.03 250); text-wrap: pretty;">
+        Manutenção hidráulica que garante a continuidade da sua operação.
+      </h1>
+      <p style="font-size: 17px; line-height: 1.6; color: oklch(0.42 0.015 250); max-width: 480px; margin: 0 0 34px;">
+        Atendemos condomínios, indústrias e engenharias com resposta técnica rápida e equipe certificada — para que um vazamento ou falha de bombeamento nunca comprometa seu patrimônio ou sua operação.
+      </p>
+      <div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+        <a href="#contato" style="background: oklch(0.72 0.16 55); color: oklch(0.18 0.04 250); font-weight: 700; font-size: 15px; padding: 15px 28px; border-radius: 6px; display: inline-block;" style-hover="background: oklch(0.78 0.16 55);">Solicitar diagnóstico gratuito</a>
+        <a href="#processo" style="color: oklch(0.30 0.03 250); font-weight: 600; font-size: 15px; border-bottom: 2px solid oklch(0.85 0.01 250); padding-bottom: 3px;" style-hover="border-color: oklch(0.72 0.16 55); color: oklch(0.20 0.02 250);">Ver como funciona ↓</a>
+      </div>
+    </div>
+    <div style="position: relative; aspect-ratio: 4/5; border-radius: 10px; overflow: hidden; background: repeating-linear-gradient(135deg, oklch(0.30 0.04 250) 0px, oklch(0.30 0.04 250) 14px, oklch(0.26 0.04 250) 14px, oklch(0.26 0.04 250) 28px); box-shadow: 0 24px 60px -20px oklch(0.20 0.03 250 / 0.4);">
+      <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px;">
+        <span style="font-family: monospace; font-size: 13px; color: oklch(0.95 0.005 250); background: oklch(0.20 0.03 250 / 0.55); padding: 10px 16px; border-radius: 6px; letter-spacing: 0.02em;">foto: equipe técnica em campo / casa de bombas</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="processo" style="background: white; padding: 96px 48px; border-top: 1px solid oklch(0.91 0.008 250); border-bottom: 1px solid oklch(0.91 0.008 250);">
+    <div style="max-width: 1140px; margin: 0 auto;">
+      <div style="max-width: 620px; margin: 0 0 56px;">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: oklch(0.55 0.13 55); text-transform: uppercase;">Como funciona</span>
+        <h2 style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 32px; margin: 10px 0 0; color: oklch(0.20 0.03 250);">Um processo técnico, do diagnóstico à manutenção contínua</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px;">
+        <sc-for list="{{ steps }}" as="step" hint-placeholder-count="4">
+          <div style="border-top: 3px solid oklch(0.72 0.16 55); padding-top: 20px;">
+            <div style="width: 40px; height: 40px; border-radius: 8px; background: oklch(0.22 0.045 250); color: white; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px;">{{ step.n }}</div>
+            <h3 style="font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 17px; margin: 0 0 8px; color: oklch(0.20 0.03 250);">{{ step.title }}</h3>
+            <p style="font-size: 14.5px; line-height: 1.55; color: oklch(0.45 0.015 250); margin: 0;">{{ step.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="max-width: 820px; margin: 0 auto; padding: 96px 48px;">
+    <div style="margin: 0 0 44px;">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: oklch(0.55 0.13 55); text-transform: uppercase;">Perguntas frequentes</span>
+      <h2 style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 32px; margin: 10px 0 0; color: oklch(0.20 0.03 250);">O que síndicos e gestores mais perguntam</h2>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <sc-for list="{{ faqs }}" as="item" hint-placeholder-count="5">
+        <div style="border: 1px solid oklch(0.90 0.008 250); border-radius: 8px; overflow: hidden; background: white;">
+          <div onClick="{{ item.toggle }}" style="padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer;">
+            <span style="font-weight: 600; font-size: 15.5px; color: oklch(0.20 0.03 250);">{{ item.q }}</span>
+            <span style="font-size: 20px; color: oklch(0.55 0.13 55); flex-shrink: 0;">{{ item.symbol }}</span>
+          </div>
+          <sc-if value="{{ item.open }}" hint-placeholder-val="{{ false }}">
+            <div style="padding: 0 22px 20px; font-size: 14.5px; line-height: 1.6; color: oklch(0.42 0.015 250);">{{ item.a }}</div>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" style="background: oklch(0.22 0.045 250); padding: 96px 48px;">
+    <div style="max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px;">
+      <div>
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: oklch(0.72 0.16 55); text-transform: uppercase;">Fale com a nossa equipe</span>
+        <h2 style="font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 30px; margin: 10px 0 20px; color: white;">Solicite um diagnóstico gratuito</h2>
+        <p style="font-size: 15.5px; line-height: 1.6; color: oklch(0.78 0.01 250); margin: 0 0 32px; max-width: 420px;">Preencha os dados abaixo e nossa equipe técnica retorna em até 1 dia útil com uma avaliação inicial.</p>
+
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <div style="background: oklch(0.28 0.05 250); border: 1px solid oklch(0.72 0.16 55 / 0.4); border-radius: 8px; padding: 22px 24px;">
+            <p style="color: white; font-weight: 700; font-size: 15.5px; margin: 0 0 6px;">Solicitação recebida.</p>
+            <p style="color: oklch(0.78 0.01 250); font-size: 14.5px; margin: 0;">Nossa equipe entrará em contato em breve.</p>
+          </div>
+        </sc-if>
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{ handleSubmit }}" style="display: flex; flex-direction: column; gap: 14px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+              <input required="{{ true }}" placeholder="Nome" value="{{ form.nome }}" onChange="{{ setNome }}" style="background: oklch(0.28 0.05 250); border: 1px solid oklch(0.40 0.03 250); border-radius: 6px; padding: 12px 14px; color: white; font-size: 14.5px;" />
+              <input required="{{ true }}" placeholder="Empresa / condomínio" value="{{ form.empresa }}" onChange="{{ setEmpresa }}" style="background: oklch(0.28 0.05 250); border: 1px solid oklch(0.40 0.03 250); border-radius: 6px; padding: 12px 14px; color: white; font-size: 14.5px;" />
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+              <input required="{{ true }}" placeholder="Telefone / WhatsApp" value="{{ form.telefone }}" onChange="{{ setTelefone }}" style="background: oklch(0.28 0.05 250); border: 1px solid oklch(0.40 0.03 250); border-radius: 6px; padding: 12px 14px; color: white; font-size: 14.5px;" /> <!-- ex: (15) 99835-9369 -->
+              <input required="{{ true }}" type="email" placeholder="E-mail" value="{{ form.email }}" onChange="{{ setEmail }}" style="background: oklch(0.28 0.05 250); border: 1px solid oklch(0.40 0.03 250); border-radius: 6px; padding: 12px 14px; color: white; font-size: 14.5px;" />
+            </div>
+            <select value="{{ form.tipo }}" onChange="{{ setTipo }}" style="background: oklch(0.28 0.05 250); border: 1px solid oklch(0.40 0.03 250); border-radius: 6px; padding: 12px 14px; color: white; font-size: 14.5px;">
+              <option value="">Tipo de imóvel</option>
+              <option value="condominio">Condomínio</option>
+              <option value="industria">Indústria</option>
+              <option value="comercial">Comercial</option>
+              <option value="outro">Outro</option>
+            </select>
+            <textarea placeholder="Descreva brevemente sua necessidade" value="{{ form.mensagem }}" onChange="{{ setMensagem }}" rows="3" style="background: oklch(0.28 0.05 250); border: 1px solid oklch(0.40 0.03 250); border-radius: 6px; padding: 12px 14px; color: white; font-size: 14.5px; resize: vertical;"></textarea>
+            <button type="submit" style="background: oklch(0.72 0.16 55); color: oklch(0.18 0.04 250); font-weight: 700; font-size: 15px; padding: 14px; border: none; border-radius: 6px; cursor: pointer; margin-top: 6px;" style-hover="background: oklch(0.78 0.16 55);">Solicitar diagnóstico gratuito</button>
+          </form>
+        </sc-if>
+      </div>
+
+      <div style="background: oklch(0.18 0.04 250); border-radius: 10px; padding: 36px; align-self: start;">
+        <h3 style="font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 16px; color: white; margin: 0 0 22px;">Contato direto</h3>
+        <div style="display: flex; flex-direction: column; gap: 18px;">
+          <div>
+            <div style="font-size: 12.5px; color: oklch(0.60 0.01 250); margin-bottom: 3px; letter-spacing: 0.04em;">TELEFONE / WHATSAPP</div>
+            <div style="font-size: 16px; color: white; font-weight: 600;">(15) 99835-9369</div>
+          </div>
+          <div>
+            <div style="font-size: 12.5px; color: oklch(0.60 0.01 250); margin-bottom: 3px; letter-spacing: 0.04em;">INSTAGRAM</div>
+            <div style="font-size: 16px; color: white; font-weight: 600;">@fabricbombas</div>
+          </div>
+          <div>
+            <div style="font-size: 12.5px; color: oklch(0.60 0.01 250); margin-bottom: 3px; letter-spacing: 0.04em;">ATENDIMENTO</div>
+            <div style="font-size: 16px; color: white; font-weight: 600;">Seg–Sáb, com plantão de emergência 24h</div>
+          </div>
+          <div>
+            <div style="font-size: 12.5px; color: oklch(0.60 0.01 250); margin-bottom: 3px; letter-spacing: 0.04em;">ÁREA DE ATUAÇÃO</div>
+            <div style="font-size: 16px; color: white; font-weight: 600;">Grande São Paulo e região metropolitana</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background: oklch(0.18 0.04 250); padding: 28px 48px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+    <span style="color: oklch(0.60 0.01 250); font-size: 13.5px;">© 2026 Fabric Bombas — Manutenção Hidráulica Predial e Industrial</span>
+    <span style="color: oklch(0.50 0.01 250); font-size: 13px;">Modelo de apresentação</span>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    faqOpen: null,
+    form: { nome: '', empresa: '', telefone: '', email: '', tipo: '', mensagem: '' },
+    submitted: false
+  };
+
+  toggleFaq(i) {
+    this.setState(s => ({ faqOpen: s.faqOpen === i ? null : i }));
+  }
+
+  setField(name, value) {
+    this.setState(s => ({ form: { ...s.form, [name]: value } }));
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.setState({ submitted: true });
+  }
+
+  renderVals() {
+    const stepsData = [
+      { title: 'Diagnóstico técnico no local', desc: 'Visita da equipe para avaliar bombas, tubulações e riscos operacionais.' },
+      { title: 'Proposta e cronograma', desc: 'Orçamento claro, prazos definidos e escopo técnico documentado.' },
+      { title: 'Execução certificada', desc: 'Equipe própria, treinada e equipada para instalação e reparo.' },
+      { title: 'Manutenção preventiva', desc: 'Acompanhamento contínuo para evitar falhas e paradas não planejadas.' }
+    ];
+    const steps = stepsData.map((s, i) => ({ n: i + 1, ...s }));
+
+    const faqData = [
+      { q: 'Vocês atendem emergências fora do horário comercial?', a: 'Sim, mantemos plantão de emergência 24h para vazamentos e falhas críticas de bombeamento.' },
+      { q: 'Quais tipos de imóveis vocês atendem?', a: 'Atendemos condomínios residenciais e comerciais, indústrias e obras acompanhadas por engenharia.' },
+      { q: 'Vocês emitem laudos técnicos e ART?', a: 'Sim, todo serviço executado pode ser acompanhado de laudo técnico e ART, conforme a necessidade do cliente.' },
+      { q: 'Como funciona o contrato de manutenção preventiva?', a: 'Definimos periodicidade de visitas com base no perfil do imóvel, com relatórios técnicos a cada visita.' },
+      { q: 'Qual é a área de atuação de vocês?', a: 'Atendemos a Grande São Paulo e região metropolitana, com deslocamento combinado para outras regiões.' }
+    ];
+    const faqs = faqData.map((f, i) => ({
+      ...f,
+      open: this.state.faqOpen === i,
+      symbol: this.state.faqOpen === i ? '–' : '+',
+      toggle: () => this.toggleFaq(i)
+    }));
+
+    return {
+      steps,
+      faqs,
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      form: this.state.form,
+      setNome: (e) => this.setField('nome', e.target.value),
+      setEmpresa: (e) => this.setField('empresa', e.target.value),
+      setTelefone: (e) => this.setField('telefone', e.target.value),
+      setEmail: (e) => this.setField('email', e.target.value),
+      setTipo: (e) => this.setField('tipo', e.target.value),
+      setMensagem: (e) => this.setField('mensagem', e.target.value),
+      handleSubmit: (e) => this.handleSubmit(e)
+    };
+  }
+}
+</script>
+</body>
+</html>
